@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-09-21T14:49:30.863Z",
+    "end": "2020-09-21T14:50:59.666Z",
+    "duration": 88803,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e5738dae-78c6-4e07-9a6b-e54bccfd70d6",
+      "title": "",
+      "fullFile": "cypress\\integration\\visit.feature",
+      "file": "cypress\\integration\\visit.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ff501c19-66bf-4d50-af26-877a934b7721",
+          "title": "Submit a Claim",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Visit a region",
+              "fullTitle": "Submit a Claim Visit a region",
+              "timedOut": null,
+              "duration": 80838,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `[class='message']`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `[class='message']`, but never found it.\n    at prodSelection.selectToUploadDocument (https://uat-demo.insytpromotions.com/__cypress/tests?p=cypress\\integration\\visit.feature:315:10)\n    at Context.eval (https://uat-demo.insytpromotions.com/__cypress/tests?p=cypress\\integration\\visit.feature:689:14)\n    at Context.resolveAndRunStepDefinition (https://uat-demo.insytpromotions.com/__cypress/tests?p=cypress\\integration\\visit.feature:11131:9)\n    at Context.eval (https://uat-demo.insytpromotions.com/__cypress/tests?p=cypress\\integration\\visit.feature:10473:35)",
+                "diff": null
+              },
+              "uuid": "3484fb98-c555-4138-b5f9-b71fa68c945d",
+              "parentUUID": "ff501c19-66bf-4d50-af26-877a934b7721",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "3484fb98-c555-4138-b5f9-b71fa68c945d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 80838,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/",
+        "reportFilename": "report",
+        "timestamp": "mmddyyyy_HHMM",
+        "overwrite": true,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

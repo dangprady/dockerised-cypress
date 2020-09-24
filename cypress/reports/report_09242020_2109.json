@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-09-24T15:39:52.796Z",
+    "end": "2020-09-24T15:39:54.669Z",
+    "duration": 1873,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a815ceb0-36ab-4736-9907-94da39de0774",
+      "title": "",
+      "fullFile": "cypress\\integration\\local.feature",
+      "file": "cypress\\integration\\local.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "364eb459-4664-43d7-b1d6-fb0f1cf4212c",
+          "title": "Check product details page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Visit Product page on Local Website",
+              "fullTitle": "Check product details page Visit Product page on Local Website",
+              "timedOut": null,
+              "duration": 1605,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Step implementation missing for: You visit local website",
+                "estack": "Error: Step implementation missing for: You visit local website\n    at Context.resolveAndRunStepDefinition (http://localhost:58923/__cypress/tests?p=cypress\\integration\\local.feature:10396:11)\n    at Context.eval (http://localhost:58923/__cypress/tests?p=cypress\\integration\\local.feature:9735:35)",
+                "diff": null
+              },
+              "uuid": "bed8fc97-727f-45cd-ba7e-6429fe9b8e58",
+              "parentUUID": "364eb459-4664-43d7-b1d6-fb0f1cf4212c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "bed8fc97-727f-45cd-ba7e-6429fe9b8e58"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1605,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/",
+        "reportFilename": "report",
+        "timestamp": "mmddyyyy_HHMM",
+        "overwrite": true,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

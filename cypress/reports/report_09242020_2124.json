@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-09-24T15:54:17.135Z",
+    "end": "2020-09-24T15:54:23.564Z",
+    "duration": 6429,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7eca7a40-8221-4e50-9ebd-8dc8e5a18b61",
+      "title": "",
+      "fullFile": "cypress\\integration\\local.feature",
+      "file": "cypress\\integration\\local.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6bc47284-b315-4ac0-9a7e-008712d32e3b",
+          "title": "Check product details page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Visit Product page on Local Website",
+              "fullTitle": "Check product details page Visit Product page on Local Website",
+              "timedOut": null,
+              "duration": 3508,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Syntax error, unrecognized expression: //dl/dd[contains(text(), 'Sitio Barra Grande')]",
+                "estack": "Error: Syntax error, unrecognized expression: //dl/dd[contains(text(), 'Sitio Barra Grande')]\n    at Function.Sizzle.error (http://localhost:8080/__cypress/runner/cypress_runner.js:87826:8)\n    at Sizzle.tokenize (http://localhost:8080/__cypress/runner/cypress_runner.js:88478:11)\n    at Sizzle.select (http://localhost:8080/__cypress/runner/cypress_runner.js:88905:20)\n    at Function.Sizzle [as find] (http://localhost:8080/__cypress/runner/cypress_runner.js:87130:9)\n    at jQuery.fn.init.find (http://localhost:8080/__cypress/runner/cypress_runner.js:89161:11)\n    at new jQuery.fn.init (http://localhost:8080/__cypress/runner/cypress_runner.js:89276:40)\n    at Object.query (http://localhost:8080/__cypress/runner/cypress_runner.js:180728:10)\n    at $Cy.$$ (http://localhost:8080/__cypress/runner/cypress_runner.js:169645:17)\n    at getElements (http://localhost:8080/__cypress/runner/cypress_runner.js:158475:20)\n    at tryCatcher (http://localhost:8080/__cypress/runner/cypress_runner.js:10325:23)\n    at Function.Promise.attempt.Promise.try (http://localhost:8080/__cypress/runner/cypress_runner.js:7599:29)\n    at resolveElements (http://localhost:8080/__cypress/runner/cypress_runner.js:158525:30)\n    at Context.get (http://localhost:8080/__cypress/runner/cypress_runner.js:158536:14)\n    at http://localhost:8080/__cypress/runner/cypress_runner.js:169873:15\n    at tryCatcher (http://localhost:8080/__cypress/runner/cypress_runner.js:10325:23)",
+                "diff": null
+              },
+              "uuid": "62788451-ece3-4aa4-a7dc-d804dfa2f878",
+              "parentUUID": "6bc47284-b315-4ac0-9a7e-008712d32e3b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "62788451-ece3-4aa4-a7dc-d804dfa2f878"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3508,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/",
+        "reportFilename": "report",
+        "timestamp": "mmddyyyy_HHMM",
+        "overwrite": true,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

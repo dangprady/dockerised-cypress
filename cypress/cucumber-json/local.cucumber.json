@@ -1,0 +1,73 @@
+[
+  {
+    "description": "  One can check listed product details",
+    "keyword": "Feature",
+    "name": "Check product details page",
+    "line": 1,
+    "id": "check-product-details-page",
+    "tags": [],
+    "uri": "local.feature",
+    "elements": [
+      {
+        "id": "check-product-details-page;visit-product-page-on-local-website",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Visit Product page on Local Website",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "You visit local website",
+            "result": {
+              "status": "passed",
+              "duration": 944000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "You select Shared project",
+            "result": {
+              "status": "passed",
+              "duration": 272000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "You goto Product Catalog",
+            "result": {
+              "status": "passed",
+              "duration": 164000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "You select product",
+            "result": {
+              "status": "passed",
+              "duration": 2036000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "You see product details",
+            "result": {
+              "status": "passed",
+              "duration": 68000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

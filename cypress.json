@@ -1,0 +1,13 @@
+{   "screenshotsFolder": "screenshots",
+    "ignoreTestFiles": "*.js",
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "cypress/reports/",
+        "reportFilename": "report",
+        "timestamp": "mmddyyyy_HHMM",
+        "overwrite": true,
+        "html": true,
+        "json": true
+      }
+
+}

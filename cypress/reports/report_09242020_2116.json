@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-09-24T15:46:48.950Z",
+    "end": "2020-09-24T15:46:57.169Z",
+    "duration": 8219,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d4ad4799-c6cc-4fc3-83b0-5b8c83f580cc",
+      "title": "",
+      "fullFile": "cypress\\integration\\local.feature",
+      "file": "cypress\\integration\\local.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2b933ab7-9f1f-4b1a-8ede-e039683672c4",
+          "title": "Check product details page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Visit Product page on Local Website",
+              "fullTitle": "Check product details page Visit Product page on Local Website",
+              "timedOut": null,
+              "duration": 5293,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `a[href='/en-US/store']`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `a[href='/en-US/store']`, but never found it.\n    at Context.eval (http://localhost:8080/__cypress/tests?p=cypress\\integration\\local.feature:551:6)\n    at Context.resolveAndRunStepDefinition (http://localhost:8080/__cypress/tests?p=cypress\\integration\\local.feature:11144:9)\n    at Context.eval (http://localhost:8080/__cypress/tests?p=cypress\\integration\\local.feature:10486:35)",
+                "diff": null
+              },
+              "uuid": "1f5aad03-94a2-431c-9c76-ac03060ae4dc",
+              "parentUUID": "2b933ab7-9f1f-4b1a-8ede-e039683672c4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "1f5aad03-94a2-431c-9c76-ac03060ae4dc"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5293,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/",
+        "reportFilename": "report",
+        "timestamp": "mmddyyyy_HHMM",
+        "overwrite": true,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
